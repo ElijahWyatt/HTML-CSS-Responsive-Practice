@@ -49,6 +49,8 @@ a{
 }
 button{
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.8rem;
+    padding: 3% 5%;
 }
 h1, h2, h3{
     font-family: 'Oxygen', sans-serif;
@@ -58,6 +60,7 @@ h1, h2, h3{
 h1{
     font-size: 5rem;
     color: #fbfffb;
+    margin: 5%;
 }
 h2{
     font-size: 3.5rem;
@@ -67,6 +70,12 @@ h3{
 }
 section, footer{
     padding: 4% 0;
+}
+
+/* Helper Classes */
+.bg-img{
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /* Header Section Styles */
@@ -91,3 +100,17 @@ nav{
     align-items: center;
 }
 /* Home Section Styles */
+#home{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/header.jpg);
+    text-align: center;
+    background-position: bottom;
+}
+#home button{
+    color:#266035;
+    border: 2px solid #266035;
+}
+/* About Section Syles */
