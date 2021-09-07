@@ -29,7 +29,6 @@ footer, header, hgroup, menu, nav, section {
     padding: 0;
     margin: 0;
     max-width: 100%;
-    border: 1px solid grey;
 }
 
 /* General Styles */
@@ -132,6 +131,9 @@ nav{
 }
 
 /* Shop Section Styles */
+#shop{
+    padding-bottom: 0;
+}
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -167,3 +169,101 @@ nav{
 }
 
 /* Footer Section Styles */
+footer{
+    background-color:#266035;
+    display:flex;
+    flex-wrap:wrap;
+    color:#fff;
+}
+footer h2{
+    color:#fff;
+    width:100%;
+}
+.left, .right{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.right img{
+    width:50%;
+}
+.left div{
+    line-height:3;
+    width:50%;
+}
+footer h3{
+    color:#fff;
+    text-align:left;
+}
+footer a{
+    color:#fff;
+}
+.copyright{
+    width:100%;
+    text-align:right;
+}
+.copyright p{
+    margin-right:3%;
+    margin-top:5%;
+}
+
+/* Responsive Design */
+/* 
+2 things needed to make a website responsive
+1.you need a viewport meta tag in the head of your HTML
+2. Media Queries - rules that we write that apply to specific screen sizes
+
+If we are designing Desktop first and scaling down to smaller screens we use max-width
+If we are designing mobile first and we are scaling up to larger screens we use min-width
+
+*/
+
+/* Media Queries */
+/* tablet */
+@media(max-width:800px){
+    /* when the screen size reaches 800px or smaller apply these styles */
+    #about{
+        height: 90vh;
+        background-position: right;
+    }
+    #about div{
+        width: 35%;
+        margin-right: 10%;
+    }
+    .text div{
+        width: 65%;
+    }
+}
+/* phone */
+@media(max-width:500px){
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        width: 10%;
+    }
+    .links{
+        width: 90%;
+    }
+    #about{
+        background-image: none;
+        background-color: #dddee0;
+        height: auto;
+        justify-content: center;
+        text-align: center;
+    }
+    #about div{
+        width: 90%;
+        margin-right: 0;
+    }
+    .container{
+        justify-content: center;
+    }
+    .text, .succulants, .tropicals, .cacti{
+        width: 90%;
+    }
+    .succulants, .tropicals, .cacti{
+        height: 40vh;
+    }
+}
