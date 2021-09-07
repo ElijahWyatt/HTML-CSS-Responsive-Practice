@@ -266,4 +266,46 @@ If we are designing mobile first and we are scaling up to larger screens we use 
     .succulants, .tropicals, .cacti{
         height: 40vh;
     }
+    .one{
+        order: 1;
+    }
+    .two{
+        order: 2;
+    }
+    .three{
+        order: 3;
+    }
+    .four{
+        order: 4;
+    }
+    .five{
+        order: 5;
+    }
+    .six{
+        order: 6;
+    }
+    footer{
+        justify-content: center;
+    }
+    .left, .right{
+        width: 90%;
+    }
+    .left div{
+        line-height: 2;
+    }
+    footer h2{
+        order: -2;
+    }
+    .right{
+        order: -1;
+    }
+    .right img{
+        width: 70%;
+    }
+    .copyright{
+        text-align: center;
+    }
+    .copyright p{
+        margin-right: 0;
+    }
 }
